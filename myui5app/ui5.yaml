@@ -27,8 +27,19 @@ server:
         test:
           - framework: Qunit
           - framework: OPA5
+    - name: preview-middleware
+      afterMiddleware: compression
+      configuration:
+        flp:
+          path: /test/flpSandbox.html
 builder:
   customTasks:
+    - name: ui5-task-zipper
+      afterTask: generateVersionInfo
+      configuration:
+        onlyZip: true
+        relativePaths: true
+        archiveName: myui5app-content
     - name: ui5-task-zipper
       afterTask: generateVersionInfo
       configuration:

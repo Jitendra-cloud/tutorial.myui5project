@@ -12,6 +12,7 @@
         "mbt": "^1"
     },
     "workspaces": [
+        "myui5app",
         "myui5app"
     ]
 }

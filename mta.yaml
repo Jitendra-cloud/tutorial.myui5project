@@ -46,6 +46,15 @@ modules:
             - dist/myui5app-content.zip
           name: myui5app
           target-path: resources/
+        - artifacts:
+            - dist/myui5app-content.zip
+          name: myui5app
+          target-path: resources/
+  - name: myui5app
+    type: html5
+    path: myui5app
+    build-parameters:
+      supported-platforms: []
   - name: myui5app
     type: html5
     path: myui5app
