@@ -10,8 +10,8 @@
     "initRepo": true,
     "projectId": "tutorial.myui5project",
     "uimodules": [
+      "myui5app",
       "myui5app"
-    ],
-    "tileName": "My UI5 Application"
+    ]
   }
 }
